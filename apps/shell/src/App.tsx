@@ -1,8 +1,7 @@
-import React, { Children, Suspense } from 'react';
+import React, {  Suspense } from 'react';
 
-
-const Button2 = React.lazy(() => import('test2/testButton'));
-const Button3 = React.lazy(() => import('test2/testButton2'));
+const Button2 = React.lazy(() => import('test2/TestButton'));
+const Button3 = React.lazy(() => import('test2/TestButton2'));
 
 const App = () => {
     return (
@@ -14,7 +13,7 @@ const App = () => {
             Federated React App
             <div>
               <Button2/>
-              <Button3 onclick={() => {alert("123123")} }>fdsa </Button3>
+              <Button3 > fgh</Button3>
             </div>
           </main>
 

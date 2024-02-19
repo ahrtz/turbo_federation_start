@@ -22,8 +22,8 @@ const moduleFederationConfig = {
       // modules: 'modules@http://localhost:8083/remoteEntry.js',
   },
   exposes: {
-    './testButton': './src/components/TestButton.tsx',
-    './testButton2': './src/components/TestButton2.tsx',
+    './TestButton': './src/components/TestButton',
+    './TestButton2': './src/components/TestButton2',
   },
   shared: {
     ...deps,
