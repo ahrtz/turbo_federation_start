@@ -13,7 +13,7 @@ const moduleFederationConfig = {
   name: 'shell',
   filename: 'remoteEntry.js',
   remotes: {
-    test2: 'app1@http://localhost:8083/remoteEntry.js',
+    test2: 'promise import@http://localhost:8083/remoteEntry.js',
   },
   exposes:{
 
