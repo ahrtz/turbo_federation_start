@@ -4,7 +4,6 @@ const webpack = require("webpack");
 
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const pkg = require("../package.json") ;
-const { NativeFederationTypeScriptHost,NativeFederationTypeScriptRemote } = require('@module-federation/native-federation-typescript/webpack');
 const { ModuleFederationPlugin } = webpack.container;
 
 const { dependencies: deps } = pkg;
@@ -60,8 +59,6 @@ module.exports = {
     },
       plugins: [
           new ModuleFederationPlugin(moduleFederationConfig),
-          NativeFederationTypeScriptHost({ moduleFederationConfig }),
-          // NativeFederationTypeScriptRemote({ moduleFederationConfig,tsConfigPath:'../tsconfig.json'  }),
           new HtmlWebpackPlugin({
             template: "public/index.html",
           }),
