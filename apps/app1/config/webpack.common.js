@@ -4,7 +4,6 @@ const webpack = require("webpack");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const pkg = require("../package.json") ;
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 
 const { ModuleFederationPlugin } = webpack.container;
 const { dependencies: deps } = pkg;
